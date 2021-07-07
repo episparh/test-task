@@ -1,12 +1,10 @@
 import unittest
 
-import HtmlTestRunner
-
 from open_weather_api import get_response
 
 appid = "08f86f73fb82f39bab545fc122868405"
 cities = {"BG": "Sofia",
-          "AU": "Vienna",
+          "AT": "Vienna",
           "BE": "Brussels",
           "FR": "Paris",
           "DE": "Berlin",
@@ -35,4 +33,4 @@ class TestStringMethods(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='html_report'))
+    unittest.main()

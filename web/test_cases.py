@@ -1,7 +1,6 @@
 import unittest
 from datetime import date
 
-import HtmlTestRunner
 from selenium import webdriver
 
 from landing_page import LandingPage
@@ -53,4 +52,4 @@ class TestCases(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    suite = unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='html_report'))
+    suite = unittest.main()
